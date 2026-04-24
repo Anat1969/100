@@ -1,0 +1,273 @@
+{
+  "_source": "תדריך תכנון סביבת מגורים לעת זקנה — משרד הבינוי והשיכון, 2024",
+  "_version": "1.0",
+
+  "walkway": {
+    "label": "רצועת הליכה",
+    "chapter": "פרק ב — מרחב ציבורי בטוח, נגיש ומפגיש",
+    "params": {
+      "min_width_residential_cm": {
+        "value": 150,
+        "max_value": 250,
+        "unit": "ס\"מ",
+        "label": "רוחב מינימלי — רחוב שכונתי",
+        "reference": "טבלה 1, עמ' 86",
+        "note": "ניתן לצמצם ב-20 ס\"מ בטופוגרפיה משופעת"
+      },
+      "min_width_commercial_cm": {
+        "value": 250,
+        "max_value": null,
+        "unit": "ס\"מ",
+        "label": "רוחב מינימלי — רחוב כלל עירוני/מסחרי",
+        "reference": "טבלה 1, עמ' 86"
+      },
+      "max_slope_percent": {
+        "value": 5,
+        "unit": "%",
+        "label": "שיפוע אורכי מקסימלי",
+        "reference": "עמ' 88",
+        "note": "מעל 5% נדרש פתרון מכני: מעלית, דרגנוע, או מסוע"
+      },
+      "cross_slope_max_percent": {
+        "value": 12,
+        "unit": "%",
+        "label": "שיפוע רוחבי מקסימלי",
+        "reference": "תקן נגישות 1918 חלק 1, עמ' 92"
+      }
+    }
+  },
+
+  "benches": {
+    "label": "ספסלים ומקומות ישיבה",
+    "chapter": "פרק ב — רשת ספסלים יישובית",
+    "params": {
+      "max_distance_between_benches_m": {
+        "value": 50,
+        "unit": "מ'",
+        "label": "מרחק מרבי בין ספסל לספסל",
+        "reference": "עמ' 110"
+      },
+      "benches_per_units": {
+        "value": 1,
+        "per": 8,
+        "min_total": 2,
+        "unit": "מקום ישיבה לכל 8 יח\"ד",
+        "label": "ספסלים בכניסת בניין מגורים",
+        "reference": "עמ' 112"
+      },
+      "accessible_standard": {
+        "value": "תקן 1918 חלק 2",
+        "label": "תקן נגישות לספסלים",
+        "note": "חובה מאחזי יד בצדדים"
+      },
+      "shade_required": {
+        "value": true,
+        "label": "חובת הצללה לספסלים",
+        "reference": "עמ' 110"
+      },
+      "lighting_required": {
+        "value": true,
+        "label": "חובת תאורה בשעות חשיכה",
+        "reference": "עמ' 110"
+      },
+      "charging_stations_recommended": {
+        "value": true,
+        "label": "עמדות טעינה סלולרית — מומלץ",
+        "reference": "עמ' 110"
+      },
+      "meeting_spot_min_width_m": {
+        "value": 5,
+        "unit": "מ'",
+        "label": "רוחב מינימלי של מקום מפגש על אם הדרך",
+        "reference": "עמ' 114"
+      },
+      "meeting_spot_min_depth_m": {
+        "value": 3,
+        "unit": "מ'",
+        "label": "עומק מינימלי של מקום מפגש",
+        "reference": "עמ' 114"
+      }
+    }
+  },
+
+  "restrooms": {
+    "label": "חדרי נוחיות",
+    "chapter": "פרק ב — חדרי נוחיות ברחבי העיר",
+    "params": {
+      "max_distance_m": {
+        "value": 250,
+        "unit": "מ'",
+        "label": "מרחק מרבי בין חדרי נוחיות",
+        "reference": "עמ' 103"
+      },
+      "accessible_required": {
+        "value": true,
+        "standard": "תקן 1918",
+        "label": "נגישות חובה",
+        "reference": "עמ' 103"
+      },
+      "digital_only_prohibited": {
+        "value": true,
+        "label": "אסור להגביל כניסה לאמצעים דיגיטליים בלבד",
+        "reference": "עמ' 102"
+      },
+      "direct_public_access_required": {
+        "value": true,
+        "label": "גישה ישירה מהמרחב הציבורי",
+        "reference": "עמ' 103"
+      }
+    }
+  },
+
+  "shade_and_wind": {
+    "label": "הצללה ושיכוך רוח",
+    "chapter": "פרק ב — הצללה ושיכוך רוח",
+    "params": {
+      "target_coverage_percent": {
+        "value": 80,
+        "unit": "%",
+        "label": "יעד כיסוי הצללה לאורך רצועת הליכה",
+        "hours": "08:00–12:00",
+        "reference": "עמ' 94"
+      },
+      "preferred_activity_hours": {
+        "value": "08:00–12:00",
+        "label": "שעות פעילות מועדפות של זקנים בחוץ",
+        "reference": "עמ' 94"
+      },
+      "planting_strip_required": {
+        "value": true,
+        "label": "רצועת שתילה צמודה לרצועת ההליכה",
+        "reference": "עמ' 95"
+      }
+    }
+  },
+
+  "lighting": {
+    "label": "תאורה",
+    "chapter": "פרק ב — תאורת רחוב רציפה ומוגברת",
+    "params": {
+      "continuous_lighting_required": {
+        "value": true,
+        "label": "תאורה רציפה לאורך רצועת ההליכה",
+        "reference": "עמ' 100"
+      },
+      "min_distance_tree_to_pole_m": {
+        "value": 3,
+        "max_value": 4,
+        "unit": "מ'",
+        "label": "מרחק מינימלי בין גזע עץ לעמוד תאורה",
+        "reference": "עמ' 100"
+      },
+      "glare_prohibited": {
+        "value": true,
+        "label": "אסור תאורה מסנוורת",
+        "reference": "עמ' 100"
+      }
+    }
+  },
+
+  "circular_route": {
+    "label": "מסלול מעגלי שכונתי",
+    "chapter": "פרק ב — שפת רחוב מכלילה",
+    "params": {
+      "length_km": {
+        "value": 1.5,
+        "unit": "ק\"מ",
+        "label": "אורך מסלול מעגלי שכונתי",
+        "reference": "עמ' 99",
+        "note": "מבטיח כ-3,000 צעדים"
+      },
+      "shade_required": {
+        "value": true,
+        "label": "חובת הצללה לאורך המסלול"
+      },
+      "benches_required": {
+        "value": true,
+        "label": "ספסלים לאורך המסלול"
+      },
+      "drinking_fountains_required": {
+        "value": true,
+        "label": "ברזיות לאורך המסלול"
+      },
+      "restrooms_required": {
+        "value": true,
+        "label": "תאי נוחיות לאורך המסלול"
+      }
+    }
+  },
+
+  "parks": {
+    "label": "פארקים וגינות",
+    "chapter": "פרק ב — פארקים, גינות וגינון קהילתי",
+    "params": {
+      "large_park_threshold_dunam": {
+        "value": 40,
+        "unit": "דונם",
+        "label": "סף פארק גדול — מחייב חדרי נוחיות",
+        "reference": "עמ' 117"
+      },
+      "bench_interval_in_park_m": {
+        "value": 100,
+        "unit": "מ'",
+        "label": "מרחק מרבי בין ספסלים בפארק",
+        "reference": "עמ' 117"
+      },
+      "restroom_distance_in_park_m": {
+        "value": 250,
+        "unit": "מ'",
+        "label": "מרחק מרבי בין חדרי נוחיות בפארק גדול",
+        "reference": "עמ' 117"
+      },
+      "medium_park_threshold_dunam": {
+        "value": 5,
+        "unit": "דונם",
+        "label": "סף גינה בינונית — מחייב מוקדי פעילות מוצלים",
+        "reference": "עמ' 117"
+      }
+    }
+  },
+
+  "cemetery": {
+    "label": "בית עלמין",
+    "chapter": "פרק ב — הנגשה במרחב בית העלמין",
+    "params": {
+      "main_path_min_width_m": {
+        "value": 2.5,
+        "unit": "מ'",
+        "label": "רוחב מינימלי לציר הליכה ראשי",
+        "reference": "עמ' 123"
+      },
+      "bench_interval_main_path_m": {
+        "value": 50,
+        "unit": "מ'",
+        "label": "מרחק בין ספסלים בציר ראשי מוצל",
+        "reference": "עמ' 123"
+      },
+      "secondary_path_min_width_m": {
+        "value": 2.5,
+        "unit": "מ'",
+        "label": "רוחב מינימלי לציר משני",
+        "reference": "עמ' 124"
+      },
+      "max_distance_between_secondary_paths_m": {
+        "value": 30,
+        "unit": "מ'",
+        "label": "מרחק מרבי בין שני צירים משניים",
+        "reference": "עמ' 124"
+      },
+      "internal_path_min_width_m": {
+        "value": 1.1,
+        "unit": "מ'",
+        "label": "רוחב מינימלי שבילי גישה פנימיים",
+        "reference": "עמ' 124"
+      }
+    }
+  },
+
+  "status_thresholds": {
+    "_note": "חריגה מעל הערך מחזירה את הסטטוס המתאים",
+    "warn_percent": 20,
+    "fail_description": "חריגה מהותית — חוסם היתר"
+  }
+}
