@@ -63,14 +63,14 @@ export function ComplianceCard({
       <div className="grid grid-cols-2 gap-4 mb-4 bg-gray-50 p-4 rounded">
         <div>
           <p className="text-sm text-gray-600 mb-1">דרישה</p>
-          <p className="text-2xl font-bold text-gray-900">
-            {threshold} {unit}
+          <p className="text-4xl font-bold text-gray-900">
+            {threshold} <span className="text-2xl">{unit}</span>
           </p>
         </div>
         <div>
           <p className="text-sm text-gray-600 mb-1">מצב בפרויקט</p>
-          <p className="text-2xl font-bold text-gray-900">
-            {currentValue !== null ? `${currentValue} ${unit}` : '—'}
+          <p className="text-4xl font-bold text-gray-900">
+            {currentValue !== null ? `${currentValue} ` : '—'} <span className="text-2xl">{unit}</span>
           </p>
         </div>
       </div>

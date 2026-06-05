@@ -58,19 +58,19 @@ export function CategoryDetailWithVisualization({
                         <StatusBadge status={status} size="sm" />
                       </div>
 
-                      <div className="flex items-center gap-2 mb-3">
+                      <div className="flex items-center gap-3 mb-3">
                         <input
                           type="number"
                           value={param.value ?? ''}
                           onChange={(e) => handleInputChange(param.id, e.target.value)}
                           placeholder="הזן ערך"
-                          className="flex-1 px-3 py-2 border border-gray-300 rounded text-sm focus:ring-2 focus:ring-blue-500"
+                          className="flex-1 px-3 py-3 border border-gray-300 rounded text-lg font-semibold focus:ring-2 focus:ring-blue-500"
                         />
-                        <span className="text-sm text-gray-600 font-medium min-w-max">{param.unit}</span>
+                        <span className="text-xl text-gray-700 font-bold min-w-max">{param.unit}</span>
                       </div>
 
-                      <div className="text-xs text-gray-500 space-y-1">
-                        <p>דרישה: {param.threshold} {param.unit}</p>
+                      <div className="text-sm text-gray-600 space-y-1">
+                        <p><strong>דרישה:</strong> {param.threshold} {param.unit}</p>
                         <p className="text-blue-600">{param.reference}</p>
                       </div>
                     </div>
@@ -100,20 +100,20 @@ export function CategoryDetailWithVisualization({
             />
 
             {/* Summary Info */}
-            <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
-              <h3 className="font-semibold text-blue-900 mb-2">ערכים עדכניים:</h3>
-              <div className="grid grid-cols-3 gap-4 text-sm">
-                <div>
-                  <p className="text-blue-700">רוחב רצועת הליכה:</p>
-                  <p className="font-bold text-gray-900">{walkwayWidth} ס"מ</p>
+            <div className="bg-blue-50 rounded-lg p-6 border-2 border-blue-300">
+              <h3 className="font-bold text-lg text-blue-900 mb-4">ערכים עדכניים:</h3>
+              <div className="grid grid-cols-3 gap-4">
+                <div className="bg-white p-4 rounded border border-blue-200">
+                  <p className="text-sm text-blue-700 mb-1">רוחב רצועת הליכה:</p>
+                  <p className="text-3xl font-bold text-gray-900">{walkwayWidth} <span className="text-lg">ס"מ</span></p>
                 </div>
-                <div>
-                  <p className="text-blue-700">שיפוע:</p>
-                  <p className="font-bold text-gray-900">{slope}%</p>
+                <div className="bg-white p-4 rounded border border-blue-200">
+                  <p className="text-sm text-blue-700 mb-1">שיפוע:</p>
+                  <p className="text-3xl font-bold text-gray-900">{slope}<span className="text-lg">%</span></p>
                 </div>
-                <div>
-                  <p className="text-blue-700">כיסוי הצללה:</p>
-                  <p className="font-bold text-gray-900">{shadePercentage}%</p>
+                <div className="bg-white p-4 rounded border border-blue-200">
+                  <p className="text-sm text-blue-700 mb-1">כיסוי הצללה:</p>
+                  <p className="text-3xl font-bold text-gray-900">{shadePercentage}<span className="text-lg">%</span></p>
                 </div>
               </div>
             </div>
