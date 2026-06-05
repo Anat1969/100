@@ -1,0 +1,81 @@
+[
+  {
+    "id": "walkway_residential",
+    "name": "רצועת הליכה שכונתית",
+    "threshold": "מינימום 150 ס\"מ",
+    "unit": "ס\"מ",
+    "minValue": 150,
+    "source": "פרק ב, טבלה 1"
+  },
+  {
+    "id": "walkway_commercial",
+    "name": "רצועת הליכה מסחרית",
+    "threshold": "מינימום 250 ס\"מ",
+    "unit": "ס\"מ",
+    "minValue": 250,
+    "source": "פרק ב, טבלה 1"
+  },
+  {
+    "id": "max_slope",
+    "name": "שיפוע מקסימלי",
+    "threshold": "עד 5%",
+    "unit": "%",
+    "maxValue": 5,
+    "source": "פרק ב, עמ' 88"
+  },
+  {
+    "id": "bench_distance",
+    "name": "מרחק מרבי בין ספסלים",
+    "threshold": "עד 50 מ'",
+    "unit": "מ'",
+    "maxValue": 50,
+    "source": "פרק ב, עמ' 110"
+  },
+  {
+    "id": "restroom_distance",
+    "name": "מרחק מרבי לחדר נוחיות",
+    "threshold": "עד 250 מ'",
+    "unit": "מ'",
+    "maxValue": 250,
+    "source": "פרק ב, עמ' 103"
+  },
+  {
+    "id": "circular_route",
+    "name": "מסלול מעגלי שכונתי",
+    "threshold": "1.5 ק\"מ",
+    "unit": "ק\"מ",
+    "targetValue": 1.5,
+    "source": "פרק ב, עמ' 99"
+  },
+  {
+    "id": "shade_coverage",
+    "name": "כיסוי הצללה (08:00–12:00)",
+    "threshold": "יעד 80%",
+    "unit": "%",
+    "targetValue": 80,
+    "source": "פרק ב, עמ' 94"
+  },
+  {
+    "id": "seating_per_building",
+    "name": "מקומות ישיבה לבניין",
+    "threshold": "1 לכל 8 יח\"ד, מינימום 2",
+    "unit": "מקומות",
+    "source": "פרק ב, עמ' 112"
+  },
+  {
+    "id": "park_bench_interval",
+    "name": "מרחק בין ספסלים בפארק",
+    "threshold": "כל 100 מ'",
+    "unit": "מ'",
+    "maxValue": 100,
+    "source": "פרק ב, עמ' 117"
+  },
+  {
+    "id": "park_restroom_distance",
+    "name": "מרחק בין חדרי נוחיות בפארק גדול",
+    "threshold": "מקסימום 250 מ'",
+    "unit": "מ'",
+    "maxValue": 250,
+    "source": "פרק ב, עמ' 117"
+  }
+]
