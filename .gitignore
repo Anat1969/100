@@ -6,3 +6,6 @@ dist
 *.log
 .idea
 .vscode
+screenshot-category.png
+screenshot-dashboard.png
+screenshot*.png
