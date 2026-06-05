@@ -1,27 +1,27 @@
 import React from 'react';
 
 interface ProgressBarProps {
-  percentage: number;
+  compliancePercentage: number;
   pass: number;
   warn: number;
   fail: number;
   pending: number;
 }
 
-export function ProgressBar({ percentage, pass, warn, fail, pending }: ProgressBarProps) {
+export function ProgressBar({ compliancePercentage, pass, warn, fail, pending }: ProgressBarProps) {
   const total = pass + warn + fail + pending;
 
   return (
     <div className="bg-white rounded-lg p-6 shadow-sm" dir="rtl">
       <div className="mb-4">
         <div className="flex items-baseline gap-2 mb-2">
-          <span className="text-4xl font-bold text-gray-900">{percentage}%</span>
+          <span className="text-4xl font-bold text-gray-900">{compliancePercentage}%</span>
           <span className="text-gray-600">עומד בדרישות</span>
         </div>
         <div className="w-full bg-gray-200 rounded-full h-4 overflow-hidden">
           <div
             className="bg-gradient-to-l from-green-500 via-orange-400 to-red-500 h-full rounded-full transition-all"
-            style={{ width: `${percentage}%` }}
+            style={{ width: `${compliancePercentage}%` }}
           />
         </div>
       </div>
