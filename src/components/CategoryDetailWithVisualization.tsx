@@ -20,9 +20,16 @@ export function CategoryDetailWithVisualization({
   const params = getParametersByCategory(categoryId);
 
   // Get key values for visualization
-  const walkwayWidth = params.find((p) => p.id.includes('min_width'))?.value || 150;
-  const slope = params.find((p) => p.id.includes('max_slope'))?.value || 0;
-  const shadePercentage = params.find((p) => p.id.includes('target_coverage'))?.value || 0;
+  const walkwayWidth =
+    params.find((p) => p.id.includes('walkway') && p.id.includes('width'))?.value ||
+    params.find((p) => p.id.includes('width'))?.value ||
+    150;
+
+  const slope =
+    params.find((p) => p.id.includes('slope'))?.value || 0;
+
+  const shadePercentage =
+    params.find((p) => p.id.includes('coverage') || p.id.includes('shade'))?.value || 0;
 
   const handleInputChange = (paramId: string, value: string) => {
     const numValue = value ? parseFloat(value) : null;
